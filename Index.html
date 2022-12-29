@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>Programa para calcular los puntos de un equipo de futbol</h1>
+<br>
+<br>
+<script>
+	
+function imprimir(frase){
+
+	document.write(frase);
+	document.write("<br>");
+}
+
+var victorias = parseInt(prompt("Coloque el número de victorias:  "));
+var empates = parseInt(prompt("Coloque el número de empates:  "));
+
+var puntos=  victorias*3 + empates;
+imprimir("La cantidad de puntos totales es: " + puntos);
+var puntosanteriores =0;
+puntosanteriores= prompt("coloque los puntos anteriores para su comparacion:  ");
+if(puntos > puntosanteriores){
+	imprimir("El equipo está mejor que el año pasado");
+}
+if (puntos==puntosanteriores){
+	imprimir("El equipo está iguak que el año pasado");
+}
+if (puntos<puntosanteriores){
+	imprimir("El equipo está peor que el año pasado");
+}
+
+
+
+</script>
